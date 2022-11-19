@@ -1,0 +1,11 @@
+@mixin midflex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@mixin midabs {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}

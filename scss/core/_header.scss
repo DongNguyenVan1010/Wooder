@@ -1,0 +1,44 @@
+.header {
+    height: $height-header;
+    background-color: $black-header;
+
+    .container-fluid {
+        @include midflex;
+
+        height: 100%;
+    }
+
+    &__menu {
+        display: flex;
+        align-items: center;
+
+        @include midabs;
+
+        li {
+            a {
+                color: $white-cl;
+                text-decoration: none;
+                font-size: 15px;
+                font-family: pb;
+                padding: 30px 35px;
+            }
+        }
+    }
+
+    &__lang {
+        &-current {
+            span {
+                color: $white-cl;
+                font-size: 16px;
+                font-family: pb;
+                text-decoration: none;
+            }
+
+            i {}
+        }
+
+        &-select {
+            display: none;
+        }
+    }
+}

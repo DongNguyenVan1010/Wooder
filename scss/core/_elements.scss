@@ -1,0 +1,44 @@
+.textbox {
+    .heading {
+        font-size: 40px;
+        font-family: pb;
+        line-height: 83px;
+        letter-spacing: 1.2px;
+        color: $black;
+    }
+
+    .desc {
+        font-size: 16px;
+        font-family: pr;
+        line-height: 22px;
+        color: $grey-desc;
+    }
+
+    .learn {
+        text-decoration: none;
+        color: $black;
+        font-size: 14px;
+        font-family: pb;
+        line-height: 58px;
+        letter-spacing: 3.2px;
+    }
+}
+
+.news {
+    &__list-items {
+        .itcaption {
+            .title {
+                font-size: 18px;
+                font-family: pb;
+                line-height: 24px;
+                margin-bottom: 24px;
+            }
+
+            .content {
+                font-size: 15px;
+                font-family: pr;
+                line-height: 20px;
+            }
+        }
+    }
+}

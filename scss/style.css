@@ -1,0 +1,309 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-smooth: antialiased;
+  text-rendering: optimizeLegibility;
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 975px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.container-fluid {
+  max-width: 1540px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.textbox .heading {
+  font-size: 40px;
+  font-family: pb;
+  line-height: 83px;
+  letter-spacing: 1.2px;
+  color: #010101;
+}
+.textbox .desc {
+  font-size: 16px;
+  font-family: pr;
+  line-height: 22px;
+  color: #464646;
+}
+.textbox .learn {
+  text-decoration: none;
+  color: #010101;
+  font-size: 14px;
+  font-family: pb;
+  line-height: 58px;
+  letter-spacing: 3.2px;
+}
+
+.news__list-items .itcaption .title {
+  font-size: 18px;
+  font-family: pb;
+  line-height: 24px;
+  margin-bottom: 24px;
+}
+.news__list-items .itcaption .content {
+  font-size: 15px;
+  font-family: pr;
+  line-height: 20px;
+}
+
+.header {
+  height: 80px;
+  background-color: #131316;
+}
+.header .container-fluid {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+.header__menu {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.header__menu li a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 15px;
+  font-family: pb;
+  padding: 30px 35px;
+}
+.header__lang-current span {
+  color: #ffffff;
+  font-size: 16px;
+  font-family: pb;
+  text-decoration: none;
+}
+.header__lang-select {
+  display: none;
+}
+
+.slider {
+  background: #010101;
+}
+
+.products {
+  padding-top: 92px;
+}
+.products__row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 105px;
+}
+.products__row:first-child .textbox {
+  padding-right: 76px;
+  padding-left: 96px;
+}
+.products__row:last-child {
+  display: flex;
+  flex-direction: row-reverse;
+  text-align: right;
+  margin-bottom: 95px;
+}
+.products__row:last-child .textbox {
+  padding-right: 96px;
+  padding-left: 76px;
+}
+
+.video .--center {
+  text-align: center;
+  padding: 0 248px;
+}
+.video .--center .desc {
+  margin: 0 6px;
+  color: #636262;
+}
+
+.about__flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 80px;
+  padding-bottom: 90px;
+}
+.about__flex .about__text {
+  margin-left: 72px;
+}
+
+.gallery {
+  background: #0e0e0e;
+  padding-top: 64px;
+}
+.gallery .--white {
+  width: 50%;
+}
+.gallery .--white .heading {
+  color: #ffffff;
+}
+.gallery .--white .desc {
+  color: #ffffff;
+}
+.gallery__list {
+  padding-top: 50px;
+  padding-bottom: 98px;
+  display: grid;
+  gap: 12px;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+}
+.gallery__list-items:nth-child(3) {
+  grid-row: 1/3;
+  grid-column: 2/3;
+}
+
+.news {
+  padding-top: 54px;
+}
+.news .textbox {
+  width: 50%;
+}
+.news__list {
+  margin-top: 52px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}/*# sourceMappingURL=style.css.map */
